@@ -1,0 +1,16 @@
+#paymentContainer {
+    padding: 32px;
+}
+
+#paymentConatinerOutButton {
+    font-size: 27px;
+    padding: 2px 7px;
+}
+
+.alert {
+    padding: 0.3rem 1rem !important;
+}
+
+#apply-box-shadow {
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px !important;
+}

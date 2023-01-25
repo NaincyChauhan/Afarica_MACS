@@ -1,0 +1,55 @@
+.navbar-brand {
+    padding: 7px 0px;
+}
+.gird-center{
+    display: grid;
+    place-items: center;
+}
+.custom-my{            
+    margin: 23px 10px 23px 0px;
+}
+#signupnowBtn,#logInnowBtn{
+    margin: 24px 0px;
+}
+.loginBox{
+    margin: 48px 0px;
+    margin-top: 0px;
+}
+.login-close{
+    padding: 12px;
+    float: right;
+}
+.curson-p{
+    cursor: pointer;
+}
+.user-profile-image{
+    max-width: 160px;
+}
+
+.navbar .navbar-nav .dropdown.nav-item-my .nav-link:before, .navbar .navbar-nav .dropdown.nav-item-my .nav-link:after {
+    top: 31px;
+}
+
+@media only screen and (max-width: 767px) {
+    .header .navbar .dropdown-menu a.dropdown-item {
+        min-width: auto !important;
+    }
+}
+
+@media (max-width: 991px){
+    .navbar-collapse {
+        top: 64px;
+    }
+}
+
+.blog-post-image > img {
+    min-height: 200px;
+}
+
+.footer-nav-link{    
+    color: white !important;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-color: #cb12cb;
+
+}

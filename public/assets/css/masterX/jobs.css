@@ -1,0 +1,333 @@
+#mysearchbutton{
+    border: none;
+    background: transparent;
+    font-size: 18px;
+    color: #082850;
+}
+.my-search-button{
+    background: transparent;
+    border: none;
+}
+@media (min-width: 992px){
+    .search .search-btn:before {
+        top: 98%;
+    }
+}
+
+.search{
+    border: 1px solid #b3b3b3;
+    padding: 0px 12px;
+    border-radius: 5px;
+}
+.form-select:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+
+/* loding Start */
+.animated-background {
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 89%;
+    color: #e2e2e2;
+    background: #f6f7f8;
+    background: #eee;
+    overflow: hidden;
+    position: relative;
+    z-index: 44;
+}
+.wrapper {
+    z-index: 44;
+    overflow: hidden;
+}
+.animated-background {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: placeHolderShimmerlarge;
+    animation-name: placeHolderShimmerlarge;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    background: -webkit-gradient(linear, left top, right top, color-stop(8%, #eee), color-stop(18%, #ddd), color-stop(33%, #eee));
+    background: -webkit-linear-gradient(left, #eee 8%, #ddd 18%, #eee 33%);
+    background: linear-gradient(90deg, #eee 8%, #ddd 18%, #eee 33%);
+    -webkit-background-size: 400% 16px;
+    background-size: 400% 16px;
+    height: 16px;
+    margin: 0 15px 10px;
+    position: relative;
+}
+.loading {
+    position: absolute;
+    left: -45%;
+    height: 100%;
+    width: 45%;
+    background-image: linear-gradient(to left, rgba(251, 251, 251, .05), rgba(251, 251, 251, .3), rgba(251, 251, 251, .6), rgba(251, 251, 251, .3), rgba(251, 251, 251, .05));
+    background-image: -moz-linear-gradient(to left, rgba(251, 251, 251, .05), rgba(251, 251, 251, .3), rgba(251, 251, 251, .6), rgba(251, 251, 251, .3), rgba(251, 251, 251, .05));
+    background-image: -webkit-linear-gradient(to left, rgba(251, 251, 251, .05), rgba(251, 251, 251, .3), rgba(251, 251, 251, .6), rgba(251, 251, 251, .3), rgba(251, 251, 251, .05));
+    animation: loading 1s infinite;
+    z-index: 45;
+}
+@keyframes loading {
+    0% {
+        left: -45%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+.content-loader {
+    background-color: #fff;
+    border: 1px solid rgba(36, 39, 44, .1);
+    color: #141823;
+    margin: 20px auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    width: 100%;
+}
+/* loading End */
+
+/* Course Style Start */
+.course-title{
+    font-size: 16px;
+}
+.ratting-star{
+    color: #e59819;
+}
+.ratting-average{
+    color: black;
+    padding-right: 4px;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.ratting-section{
+    padding-bottom: 4px;
+}
+.discount-info{
+    position: absolute;
+    left: 0px;
+    background: red;
+    margin: 8px;
+    padding: 6px;
+    border-radius: 3px;
+    color: white;
+    font-weight: 900;
+}
+.line-through{
+    text-decoration: line-through;
+}
+.font-17{
+    font-size: 17px;
+}
+.regular-price{
+    font-weight: 100;
+    font-size: 15px;
+}
+.course-created-date{
+    position: absolute;
+    right: 0px;
+}
+.filter-sidebar {
+    /* position: fixed; */
+    margin-top: 12px;
+    scroll-margin: 200px !important;
+}
+@media only screen and (max-width: 767px) {
+    .filter-sidebar {
+        position: relative;
+    }
+    .video-list-icon{
+        display: none;
+    }
+}
+/* Course Style End */
+
+/* Collapse Style Start */
+/* .icon-active{
+    
+} */
+/* Collapse Style End */
+
+.font-20{
+    font-size: 20px;
+}
+.font-15{
+    font-size: 15px !important;
+}
+.font-14{
+    font-size: 14px !important;
+}
+.font-16{
+    font-size: 16px;
+}
+.color-black{
+    color: black !important;
+}
+.font-weight-bold {
+    font-weight: bold !important;
+}
+.course-discount{
+    padding-left: 10px;
+    font-size: 16px;
+}
+.total-duration-icon{
+   font-size: 18px; 
+   font-weight: bold;
+   padding-right: 8px;
+}
+.total-duration{
+    position: relative;
+    bottom: 2px;
+}
+
+.watch-icon{
+    position: absolute;
+    z-index: 2;
+    top: 32px;
+    left: 10px;
+}
+
+.video-content {
+    height: 500px;
+    overflow-y: auto;
+}
+.video-content::-webkit-scrollbar {
+    display: none;
+}
+.vide-box{
+    display: grid;
+    place-items: center;
+}
+.text-primary {
+    color: #6c066c !important;
+}
+.p-r-0{
+    padding-right: 0px !important;
+}
+.b-0{
+    bottom: 0px !important;
+}
+
+/* Ratting Section Start*/
+.ratting {
+    float:left;
+    width:116px;
+}
+.ratting span { 
+    float:right; 
+    position:relative; 
+}
+.ratting span input {
+    position:absolute;
+    top:0px;
+    left:0px;
+    opacity:0;
+}
+.ratting span label {
+    display:inline-block;
+    text-align:center;
+    margin-right:2px;
+    line-height:30px;
+    -webkit-border-radius:50%;
+}
+.ratting span:hover ~ span label,
+.ratting span:hover label,
+.ratting span.checked label,
+.ratting span.checked ~ span label i {
+    color:#e59819;
+}        
+.text-ratting{
+    color:#e59819;
+}
+.my-badge{
+    background: green;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+a{
+    cursor: pointer !important;
+}
+.p-t-50{
+    padding-top: 50px !important;
+}
+/* Ratting Section End */
+
+h4{
+    font-weight: 500 !important;
+}
+
+#paymentConatinerOutButton {
+    font-size: 27px;
+    padding: 2px 7px;
+}
+.total-price{
+    padding: 4px;
+    font-size: 17px;
+    font-weight: 600;
+}
+#paymentContainer-inner{
+    display: grid;
+    place-items: center;
+}
+#courseBuyForm{
+    display: none;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-item {
+    border: none;
+}
+
+.accordion-item:first-of-type .accordion-button {
+    border-bottom-left-radius: calc(0.25rem - 1px);
+    border-bottom-right-radius: calc(0.25rem - 1px);
+}
+
+.accordion-button:not(.collapsed) {
+    color: black;
+    background-color: #e7f1ff;
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+
+.list-group-item{
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.form-check-label{
+    padding-left: 6px;
+    cursor: pointer;
+}
+.form-check-input{
+    cursor: pointer;
+}
+.form-check-label{
+    font-family: sans-serif;
+}
+.accordion-body{
+    padding-left: 0.3rem;
+}
+.giveMeEllipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    
+}
+.address{
+    position: relative;
+    top: 2px;
+    left: 2px;
+}
