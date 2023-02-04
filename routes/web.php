@@ -71,6 +71,7 @@ Route::get('/privacy-policy', [HomeController::class, 'policy'])->name('policy')
 Route::get('it-Consultancy/apply-now', [HomeController::class, 'applyNow'])->name('apply-now');
 Route::post('it-Consultancy/apply-form', [ConsultController::class, 'store'])->name('apply-form');
 Route::post('send/application', [HomeController::class, 'storeApplication'])->name('submit-applycation');
+Route::get('web/services', [HomeController::class, 'webServices'])->name('web-services');
 
 // Register
 Route::post('register-user', [UserController::class, 'registeruser'])->name('registeruser');

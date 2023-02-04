@@ -29,6 +29,10 @@ class HomeController extends Controller
         ]);
     }
 
+    public function webServices(){
+        return view('site.markting.index');
+    }
+
     public function about()
     {
         return view('site.about',[
